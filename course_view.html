@@ -1,16 +1,21 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LMS - Course View</title>
-    <img src="logo.jpg" width="150px" height="150px">
-    <h1>LMS-Learning Management System</h1>
+    <title>Course View - LMS</title>
+    <div id="LMS Pic">
+        <img width="100px" height="100px" src="logo.jpg"  alt="Learning Managment System Logo">
+    </div>
+    <div id="Name">
+        <h1>LMS - Learning Managment System</h1>
+        <h2>LMS - Course View</h2>
+    </div>
 </head>
 <body>
-    <div class="menu">
+    <div class="Navigation Links">
         <a href="index.html">Homepage</a>
     </div>
-    <br>
+
+    <br><br>
+    <main>
     <div id="term">
         <label>Select Term:</label>
         <select>
@@ -23,21 +28,21 @@
     <div class="courses">
         <h2>Enrolled Courses</h2>
         <hr>
-        <table width=100%>
+        <table width="100%">
             <tr>
-                <td width=33%>
+                <td style="width: 33%">
                     <img src="course1.jpg" width=100%; height=100%>
                     <p>Course Name: Web Development</p>
                     <p>Course Code: WD381</p>
                     <a href="attempt_quiz.html">Attempt Quiz</a>
                 </td>
-                <td width=33%>
+                <td style="width: 33%">
                     <img src="course1.jpg" width=100%; height=100%>
                     <p>Course Name: Data Structures</p>
                     <p>Course Code: DS371</p>
                     <a href="attempt_quiz.html">Attempt Quiz</a>
                 </td>
-                <td width=33%>
+                <td style="width: 33%">
                     <img src="course1.jpg" width=100%; height=100%>
                     <p>Course Name: DBMS</p>
                     <p>Course Code: DB346</p>
@@ -45,21 +50,22 @@
                 </td>
             </tr>
             <tr>
-                <td width=33%>
+                <td style="width: 33%">
                     <img src="course1.jpg" width=100%; height=100%>
                     <p>Course Name: Software Testing</p>
                     <p>Course Code: ST484</p>
                     <a href="attempt_quiz.html">Attempt Quiz</a>
                 </td>
-                <td>
+                <td style="width: 33%">
                     <img src="course1.jpg" width=100%; height=100%>
-                    <p>Course Name: Software Architectures</p>
+                    <p>Course Name: Software Architecture</p>
                     <p>Course Code: SA396</p>
                     <a href="attempt_quiz.html">Attempt Quiz</a>
                 </td>
+                <td style="width: 33%"></td>
             </tr>
         </table>  
-    <br>
+    <br><br>
     </div>
         <div class="pending">
             <h2>Pending Invitations</h2>
@@ -70,21 +76,22 @@
                         <img src="course2.jpg" width=100%; height=100%>
                         <p>Course Name: Data Science</p>
                         <p>Course Code: DS102</p>
-                        <button style="background-color:rgb(59, 186, 59)">Accept</button>
-                        <button style="background-color:rgb(227, 84, 84)">Decline</button>
+                        <button style="background-color:rgb(83, 225, 83)">Accept</button>
+                        <button style="background-color:rgb(237, 109, 109)">Decline</button>
                     </td>
                     <td width=33%>
                         <img src="course2.jpg" width=100%; height=100%>
                         <p>Course Name: Machine Learning</p>
                         <p>Course Code: ML105</p>
-                        <button style="background-color:rgb(59, 186, 59)">Accept</button>
-                        <button style="background-color:rgb(227, 84, 84)">Decline</button>
+                        <button style="background-color:rgb(83, 225, 83)">Accept</button>
+                        <button style="background-color:rgb(237, 109, 109)">Decline</button>
                     </td>
                     <td width=33%>
                     </td>
                 </tr>
             </table>
         </div>
+    </main>
 </body>
 <br><br>
 <footer>© 2025 LMS. All rights reserved.</footer>

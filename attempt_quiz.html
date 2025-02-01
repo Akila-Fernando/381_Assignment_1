@@ -1,19 +1,17 @@
 <html lang="en">
 <head>
-<title>LMS - Quiz</title>
+<title>Attempt Quiz - LMS</title>
+<div id="LMS Pic">
+    <img width="100px" height="100px" src="logo.jpg"  alt="Learning Managment System Logo">
+</div>
+
+<div id="Name">
+    <h1>LMS - Learning Managment System</h1>
+    <h2>LMS - Attempt Quiz</h2>
+</div>
 </head>
 <body>
-
-    <div id="LMS Pic">
-        <img width="100px" height="100px" src="logo.jpg"  alt="Learning Managment System Logo">
-    </div>
-
-    <div id="Headers">
-        <h1>LMS - Learning Managment System</h1>
-        <h2>LMS-Attempt Quiz</h2>
-    </div>
-
-    <div id="Page Links">
+    <div id="Navigation Links">
         <table>
             <tr>
                 <td><a href="index.html">Homepage</a></td>
@@ -24,9 +22,9 @@
     </div>
 
     <br><br>
-
+    <main>
     <div id="Banner">
-        <img src="banner.jpg" alt="Quiz Time Banner">
+        <img src="banner.jpg" alt="Quiz Time Banner" width="100%">
     </div>
 
     <div id="Course Title">
@@ -42,7 +40,7 @@
 
     <div id="Questions">
         <div id="Question1">
-            <h2>Question 1</h2>
+            <h3>Question 1</h3>
             <p>What does HTML stand for?</p>
             <div>
             <input type="radio" name="Question1">HyperText Markup Language
@@ -53,22 +51,23 @@
             <button>Submit Answer</button>
         </div>
         <div id="Question2">
-            <h2>Question 2</h2>
+            <h3>Question 2</h3>
             <p>Which of the following are HTML elements?</p>
             <div>
                 <input type="checkbox" id="option1" name="Question1" value="option1">
-                <label for="option1">div</label>
+                <label for="option1">&lt;div&gt;</label>
             </div>
             <div>
                 <input type="checkbox" id="option2" name="Question1" value="option2">
-                <label for="option2">span</label>
+                <label for="option2">&lt;span&gt;</label>
             </div>
             <button>Submit Answer</button>
         </div>
         <br>
         <button>Finish Quiz</button>
     </div>
-    <br><br>
+    </main>
+    <br>
     <footer>© 2025 LMS. All rights reserved.</footer>
 </body>
 </html>
