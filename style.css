@@ -1,0 +1,225 @@
+head {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headers {
+    background-color: #004080;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65%;
+    align-items: center;
+}
+
+.headers h1 {
+    color: white;
+    margin-left: auto;  /* idk if we learnt this!!!!! */
+}
+
+.headers img {
+    margin-right: auto;
+    height: 70px;
+    width: 70px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    background-color: #003366;
+    padding: 10px;
+}
+
+.navbar a { /* even spacing needed*/
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar table{
+    border-spacing: 200px 3px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about { /* margin: 20px*/
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.about h2 {
+    color: #004080;
+    font-size: 18px;
+}
+
+.features {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+.login h2 {
+    text-align: center;
+    font-size: 20px;
+    color:#004080;
+}
+
+.loginfields { /*box shadow*/
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 30px;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 30px;
+}
+
+.loginfields form {
+    text-align: center;
+}
+
+.loginfields form input {
+    background-color: lightyellow;
+    border: darkgrey 3px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.loginbutton{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.loginbutton a button {
+    background-color: #008000;
+    color:white;
+    border: darkgrey 3px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.loginbutton a button:hover {
+    background-color: #006600;
+}
+
+.forgotpassword a {
+    display: flex;
+    justify-content: center;
+    color: #004080;
+    text-decoration: none;
+}
+
+.forgotpassword a:hover {
+    color: #004080;
+    text-decoration: underline;
+}
+
+.term {
+    display: flex;
+    justify-content: center;
+}
+
+.courses h2 {
+    text-align: center;
+    font-size: 15px;
+    color:#004080;
+}
+
+.term label {
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.term select {
+    background-color: lightyellow;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*fix size of courses and extra square*/
+
+.courses table tr td{
+    background-color: #e6f2ff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.courses table tr td p{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.courses table tr td a{
+    display: flex;
+    justify-content: center;
+}
+
+.accept{
+    background-color: #4CAF50;
+    color: white;
+    border: darkgrey 3px;
+    padding: 7px;
+}
+
+.accept:hover {
+    background-color: #265e28;
+}
+
+.decline{
+    background-color:#D32F2F;
+    color: white;
+    border: darkgrey 3px;
+    padding: 7px;
+}
+
+.decline:hover {
+    background-color: #821b1b;
+}
+
+.pending h2 {
+    text-align: center;
+    font-size: 20px;
+    color:#004080;
+}
+
+.pending table tr td{
+    background-color: #e6f2ff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.pending table tr td p{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.pending table tr td a{
+    display: flex;
+    justify-content: center;
+}

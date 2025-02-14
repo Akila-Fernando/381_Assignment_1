@@ -1,38 +1,40 @@
 <html lang="en">
+<link rel="stylesheet" href="style.css">
 <head>
-    <title>Login - LMS</title>
-    <div id="LMS Pic">
+    <title>Login - LMS</title>   
+    <div class="headers">
         <img width="100px" height="100px" src="logo.jpg"  alt="Learning Managment System Logo">
-    </div>
-    <div id="Name">
         <h1>LMS - Learning Managment System</h1>
-        <h2>LMS Login</h2>
     </div>
 </head>
 <body>
-    <div id="Navigation Links">
-        <a href="index.html">Homepage</a>
+    <div class="navbar">
+            <a href="index.html">Homepage</a>
     </div> 
+    <div class="login">
+        <h2>LMS Login</h2>
 
-    <br>
+        <div class="loginfields"> 
+            <form>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd">
+            </form>
+        </div>
 
-    <div id="Login"> 
-        <p>Username: <input data-="textbox"></p>
-        <p>Password: <input type="password"></p>
+        <div class="loginbutton">
+            <a href="course_view.html">
+                <button>Login</button>
+            </a>
+        </div>
+        
+        <br>
+
+        <div class="forgotpassword">
+            <a href=" ">Forgot Password?</a>
+        </div> 
     </div>
-
-    <div id="Click Login">
-        <a href="course_view.html">
-            <button>Login</button>
-        </a>
-    </div>
-    
-    <br>
-
-    <div id="Forgot Password">
-        <a href=" ">Forgot Password?</a>
-    </div> 
-
 
 </body>
 

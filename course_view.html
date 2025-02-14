@@ -1,23 +1,21 @@
 <html lang="en">
 <head>
-    <title>Course View - LMS</title>
-    <div id="LMS Pic">
+    <link rel="stylesheet" href="style.css">
+    <title>Course View - LMS</title>   
+    <div class="headers">
         <img width="100px" height="100px" src="logo.jpg"  alt="Learning Managment System Logo">
-    </div>
-    <div id="Name">
         <h1>LMS - Learning Managment System</h1>
-        <h2>LMS - Course View</h2>
     </div>
 </head>
 <body>
-    <div class="Navigation Links">
+    <div class="navbar">
         <a href="index.html">Homepage</a>
     </div>
 
-    <br><br>
+    <br>
     <main>
-    <div id="term">
-        <label>Select Term:</label>
+    <div class="term">
+        <label>Select Term: </label>
         <select>
             <option>Winter 2025</option>
             <option>Fall 2024</option>
@@ -62,7 +60,6 @@
                     <p>Course Code: SA396</p>
                     <a href="attempt_quiz.html">Attempt Quiz</a>
                 </td>
-                <td style="width: 33%"></td>
             </tr>
         </table>  
     <br><br>
@@ -76,17 +73,15 @@
                         <img src="course2.jpg" width=100%; height=100%>
                         <p>Course Name: Data Science</p>
                         <p>Course Code: DS102</p>
-                        <button style="background-color:rgb(83, 225, 83)">Accept</button>
-                        <button style="background-color:rgb(237, 109, 109)">Decline</button>
+                        <button class="accept">Accept</button>
+                        <button class="decline">Decline</button>
                     </td>
                     <td width=33%>
                         <img src="course2.jpg" width=100%; height=100%>
                         <p>Course Name: Machine Learning</p>
                         <p>Course Code: ML105</p>
-                        <button style="background-color:rgb(83, 225, 83)">Accept</button>
-                        <button style="background-color:rgb(237, 109, 109)">Decline</button>
-                    </td>
-                    <td width=33%>
+                        <button class="accept">Accept</button>
+                        <button class="decline">Decline</button>
                     </td>
                 </tr>
             </table>
