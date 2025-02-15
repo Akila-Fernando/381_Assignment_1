@@ -1,6 +1,10 @@
+/* Common for all Pages */
+
 head {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* add gray background to all pages? */
 
 .headers {
     background-color: #004080;
@@ -50,6 +54,16 @@ body {
     margin-left: auto;
 }
 
+footer {
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* About LMS Homepage */
+
 .about { /* margin: 20px*/
     background-color: lightgray;
     text-align: center;
@@ -66,14 +80,7 @@ body {
     font-weight: bold;
 }
 
-footer {
-    background-color: #004080;
-    color: white;
-    padding: 10px;
-    font-size: 13px;
-    text-align: center;
-}
-
+/* Login Page */
 
 .login h2 {
     text-align: center;
@@ -90,6 +97,7 @@ footer {
     margin-left: 150px;
     margin-right: 150px;
     border-radius: 30px;
+    box-shadow: 5px 10px 18px #888888;
 }
 
 .loginfields form {
@@ -133,6 +141,8 @@ footer {
     text-decoration: underline;
 }
 
+/* Courses Page */
+
 .term {
     display: flex;
     justify-content: center;
@@ -157,7 +167,7 @@ footer {
     padding: 5px;
 }
 
-/*fix size of courses and extra square*/
+/*fix size of courses*/
 
 .courses table tr td{
     background-color: #e6f2ff;
@@ -165,6 +175,7 @@ footer {
     margin: 15px;
     border-radius: 10px;
     font-size: 15px;
+    box-shadow: 5px 5px 10px #888888;
 }
 
 .courses table tr td p{
@@ -183,6 +194,8 @@ footer {
     color: white;
     border: darkgrey 3px;
     padding: 7px;
+    margin-right: 6px;
+    border-radius: 5px;
 }
 
 .accept:hover {
@@ -194,6 +207,7 @@ footer {
     color: white;
     border: darkgrey 3px;
     padding: 7px;
+    border-radius: 5px;
 }
 
 .decline:hover {
@@ -224,3 +238,117 @@ footer {
     justify-content: center;
 }
 
+.pendingbuttons {
+    display: flex;
+    justify-content: center;
+}
+
+/* Quiz Page */
+
+.banner img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.details {
+    text-align: center;
+    background-color: lightblue;
+    padding: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.details h2 {
+    font-style: bold;
+    font-size: large;
+    color: #004080;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question1 {
+    background-color: #cacaca;
+    padding: 20px;
+}
+
+.question2 {
+    background-color: #cacaca;
+    padding: 10px;
+    /* fix size of second question box - make both questions same size */
+}
+
+.questions button {
+    background-color: lightblue;
+    color: black;
+    padding: 7px;
+    border: darkgrey 3px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.questions button:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.finishbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.finishbutton button {
+    background-color: #D32F2F;
+    border: darkgrey 3px;
+    border-radius: 5px;
+    color: white;
+    padding: 7px;
+
+}
+
+.finishbutton button:hover {
+    background-color: #821b1b;
+    display:flex;
+}
+
+/* Leaderboard Page */
+
+.tableheader td{
+    background-color: #4CAF50;
+    color: white;
+    column-span: all;
+}
+
+.leaderboard table {
+    border-collapse: collapse;
+    border: white;
+}
+
+.firstplace td {
+    background-color: gold;
+}
+
+.secondplace td {
+    background-color: silver;
+}
+
+.thirdplace td {
+    background-color: #cd7f32;
+}
+
+.fourthplace td {
+    background-color: #f9f9f9;
+}
+
+.fifthplace td {
+    background-color: #e4e2e2;
+}
+
+.leaderboard img{
+    border: 2px solid black;
+    border-radius: 100%;
+}
