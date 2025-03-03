@@ -4,8 +4,6 @@ head {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* add gray background to all pages? */
-
 .headers {
     background-color: #004080;
     padding: 20px;
@@ -18,7 +16,7 @@ head {
 
 .headers h1 {
     color: white;
-    margin-left: auto;  /* idk if we learnt this!!!!! */
+    margin-left: auto;  
 }
 
 .headers img {
@@ -39,7 +37,7 @@ body {
     padding: 10px;
 }
 
-.navbar a { /* even spacing needed*/
+.navbar a {
     text-decoration: none;
     color: white;
 }
@@ -64,7 +62,8 @@ footer {
 
 /* About LMS Homepage */
 
-.about { /* margin: 20px*/
+.about { 
+    margin: 20px; /*says to add margin of 20 but does not match image */
     background-color: lightgray;
     text-align: center;
     padding: 20px;
@@ -88,7 +87,7 @@ footer {
     color:#004080;
 }
 
-.loginfields { /*box shadow*/
+.loginfields {
     display: flex;
     flex-direction: column;
     background-color: lightgray;
@@ -167,12 +166,16 @@ footer {
     padding: 5px;
 }
 
-/*fix size of courses*/
+.courses table {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .courses table tr td{
     background-color: #e6f2ff;
     padding: 20px;
     margin: 15px;
+    width: 33%; /* 3 cells per row */
     border-radius: 10px;
     font-size: 15px;
     box-shadow: 5px 5px 10px #888888;
@@ -268,18 +271,22 @@ footer {
 .questions {
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
 }
 
 .question1 {
     background-color: #cacaca;
     padding: 20px;
+    width: 20%;
+    text-align: left;
 }
 
 .question2 {
     background-color: #cacaca;
     padding: 10px;
-    /* fix size of second question box - make both questions same size */
+    width: 20%;
+    text-align: left;
 }
 
 .questions button {
