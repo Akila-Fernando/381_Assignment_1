@@ -26,6 +26,7 @@
         <p>Topic: HTML Basics</p>
         <p>Deadline: 11:59 PM, February 10, 2025</p>
         <p>Attempts Allowed: 1</p>
+        <div>Time left = <span id="timer"></span></div>    
     </div>
 
     <div class="questions">
@@ -33,26 +34,27 @@
         <p>What does HTML stand for?</p>
         <div class="question1">
             <div>
-            <input type="radio" name="Question1">HyperText Markup Language
+            <input type="radio" name="Question1" id="q1option1">HyperText Markup Language
             </div>
             <div>
-            <input type="radio" name="Question1">HomeTool Markup Language
+            <input type="radio" name="Question1" id="q1option2">HomeTool Markup Language
             </div>
         </div>
-        <button>Submit Answer</button>
+        <button onclick="pointCalculator(), validateAnswer1()">Submit Answer</button>
         <h3>Question 2</h3>
         <p>Which of the following are HTML elements?</p>
         <div class="question2">
             <div>
-                <input type="checkbox" id="option2" name="Question1" value="option2">
-                <label for="option2">&lt;div&gt;</label>
+                <input type="checkbox" id="q2option1" name="Question1" value="option1">
+                <label for="option1">&lt;div&gt;</label>
             </div>
-            <div">
-                <input type="checkbox" id="option1" name="Question1" value="option1">
-                <label for="option1">&lt;span&gt;</label>
+            <div>
+                <input type="checkbox" id="q2option2" name="Question1" value="option2">
+                <label for="option2">&lt;span&gt;</label>
             </div>
-            <button>Submit Answer</button>
         </div>
+        <button onclick="pointCalculator(), validateAnswer2()">Submit Answer</button>
+        <h3>Final Score: <span id="score"></span></h3>
     </div>
     <br>
     <form action="">
@@ -63,5 +65,71 @@
     </main>
     <br>
     <footer>© 2025 LMS. All rights reserved.</footer>
+
+    <script>
+        function displayTime(durationSeconds) {
+            const timerElement = document.getElementById("timer");
+            let timeRemaining = durationSeconds;
+
+            const timerInterval = setInterval(function () {
+                let minutes = Math.floor(timeRemaining / 60);
+                let seconds = timeRemaining % 60;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                timerElement.textContent = minutes + ':' + seconds;
+
+                if (timeRemaining > 0) {
+                    timeRemaining--;
+                } else {
+                    window.location.href = "leaderboard.html"
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            displayTime(10 * 60); //10 minutes
+        };
+
+        function validateAnswer1() {
+            let isChecked1 = document.getElementById("q1option1").checked
+            let isChecked2 = document.getElementById("q1option2").checked
+
+            if (!isChecked1 && !isChecked2) {alert("Please Answer Question 1")}
+        }
+
+        function validateAnswer2() {
+            let isChecked1 = document.getElementById("q2option1").checked
+            let isChecked2 = document.getElementById("q2option2").checked
+
+            if (!isChecked1 && !isChecked2) {alert("Please Answer Question 2")}
+        }
+
+        let points = 0;
+
+        function pointCalculator (){
+            points = 0;
+            let isChecked1 = document.getElementById("q2option1").checked
+            let isChecked2 = document.getElementById("q2option2").checked
+
+            if (isChecked1) {
+                points += 25;
+            }
+            if (isChecked2) {
+                points += 25;
+            }
+            
+            if(document.getElementById("q1option1").checked) {points += 50}
+
+            document.getElementById("score").textContent = points + "/" + 100
+        }
+        
+
+        /* THINGS TO ASK:
+        -allowed to use window.onload??
+        -when should points be calculated/displayed
+        -finish quiz button? shld it display points, or validate questions
+        */
+    
+        </script>
 </body>
 </html>
